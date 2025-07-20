@@ -11,4 +11,7 @@ COPY . .
 # Expose port
 EXPOSE 3000
 # Run the app
+
+RUN echo "Building app version: $APP_VERSION"
+
 CMD ["npm", "start"]
